@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 2 - Mi Primer Sitio con JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Instituto Almirante Illingworth</h1>
+        <p>Asignatura: Diseño Web - Unidad 2</p>
+    </header>
+
+    <main>
+        <div class="caja-formulario">
+            <h2>Formulario de Matrícula</h2>
+            <p>Por favor, ingrese sus datos para procesar la inscripción:</p>
+            
+            <form id="formularioMatricula">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" required><br><br>
+
+                <label for="edad">Edad del Estudiante:</label>
+                <input type="number" id="edad" required><br><br>
+
+                <label for="cursos">Número de Cursos a inscribir:</label>
+                <input type="number" id="cursos" required><br><br>
+
+                <button type="submit" id="btnProcesar">Calcular y Registrar</button>
+            </form>
+
+            <div id="resultado"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desarrollado por: JOSEPH CASTRO</p>
+        <p>Año 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
